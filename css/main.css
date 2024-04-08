@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -9,6 +14,7 @@ body {
 :root {
     --white-color: #fff;
     --gray-color: #48555B;
+    --blue-color: #00A4E5;
 }
 
 .container {
@@ -87,10 +93,89 @@ body {
 .navbar_right li:hover {
     cursor: pointer;
     font-weight: 700;
-    color: #00A4E5;
+    color: var(--blue-color);
+}
+
+/* About */
+.about {
+    padding-top: 60px;
+    color: var(--gray-color);
+}
+.about_tittle {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2.31px;
+    text-align: center;
+}
+.about_tittle::after {
+    content: "";
+    display: block;
+    margin: 12px auto 55px;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue-color);
+}
+.about_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about_left {
+    max-width: 395px;
+}
+.about_text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+.accent-color {
+    color: var(--blue-color);
+}
+.about-p {
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 33px;
+    letter-spacing: 0.19px;
+}
+.about_right {
+    display: flex;
+    margin-top: 30px;
+}
+.about-h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    line-height: 29px;
+    padding: 15px 58px 151px 14px;
+}
+.rectangle {
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+}
+.rectangle:last-child {
+    margin-right: 0;
+}
+.about-plan {
+    background-image: url(../img/plan.png);
+}
+.about-manage {
+    background-image: url(../img/manage.png);
+}
+.about-build {
+    background-image: url(../img/build.png);
 }
 
 
+
+
+@media screen and (max-width: 1365px) {
+    .about_content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -105,6 +190,12 @@ body {
     }
     .navbar_right ul {
         margin-top: 25px;
+    }
+    .about_right {
+        flex-direction: column;
+    }
+    .rectangle {
+        margin: 0 0 10px;
     }
 }
 
