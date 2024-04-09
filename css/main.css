@@ -197,7 +197,7 @@ body {
     max-width: 405px;
     margin: 0 31px 0 154px;
 }
-.services_btn {
+.btn {
     cursor: pointer;
     font-weight: 700;
     text-transform: uppercase;
@@ -232,6 +232,32 @@ body {
     text-transform: uppercase;
     margin: 23px 0 13px;
 }
+
+/* Get in touch */
+.get-in-touch {
+    margin-top: 115px;
+    background-image: url(../img/get-in-touch_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.get-in-touch_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 231px;
+}
+.get-in-touch_tittle {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--gray-color);
+    text-align: center;
+    margin-bottom: 35px;
+    max-width: 350px;
+}
+
+
 
 
 @media screen and (max-width: 1439px) {
