@@ -15,12 +15,26 @@ body {
     --white-color: #fff;
     --gray-color: #48555B;
     --blue-color: #00A4E5;
+    --gray-border: #E6E6E6;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 250px;
+}
+
+.text-p {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+}
+
+.tittle_text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2.31px;
 }
 
 /* Header */ 
@@ -39,7 +53,7 @@ body {
     display: block;
     margin: 0 auto;
 }
-.header-tittle {
+.header_tittle {
     margin-top: 309px;
     font-family: "Bebas Neue", sans-serif;
     text-transform: uppercase;
@@ -64,7 +78,7 @@ body {
 .navbar {
     border-width: 1px 0px;
     border-style: solid;
-    border-color: #E6E6E6;
+    border-color: var(--gray-border);
     padding: 15px 0 10px;
 }
 .navbar_content {
@@ -102,10 +116,6 @@ body {
     color: var(--gray-color);
 }
 .about_tittle {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 2.31px;
     text-align: center;
 }
 .about_tittle::after {
@@ -128,16 +138,12 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 33px;
 }
 .accent-color {
     color: var(--blue-color);
 }
-.about-p {
-    font-size: 13px;
-    line-height: 23px;
-    margin-top: 33px;
-    letter-spacing: 0.19px;
-}
+
 .about_right {
     display: flex;
     margin-top: 30px;
@@ -167,6 +173,65 @@ body {
     background-image: url(../img/build.png);
 }
 
+/* Services */
+.services {
+    padding-top: 118px;
+}
+.services_tittle::after {
+    content: "";
+    display: block;
+    margin: 12px 0 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue-color);
+}
+.services_top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.services-p {
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    max-width: 405px;
+    margin: 0 31px 0 154px;
+}
+.services_btn {
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    background-color: var(--blue-color);
+    padding: 12px 32px;
+    border: none;
+}
+.services_bottom {
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.services_bottom_item {
+    width: 295px;
+    height: 291px;
+    border: var(--gray-border) 1px solid;
+    padding: 37px 18px 0 22px;
+    margin-right: 28px;
+}
+.services_bottom_item:last-child {
+    margin-right: 0;
+}
+.services-h4 {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--gray-color);
+    line-height: 24px;
+    letter-spacing: 0.43px;
+    text-transform: uppercase;
+    margin: 23px 0 13px;
+}
 
 
 
